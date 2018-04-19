@@ -4,8 +4,7 @@ public partial class Form1 : Form
         string[,] btnsc = new string[4, 4];
         public Form1()
         {
-            InitializeComponent();
-            
+            InitializeComponent(); 
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -26,7 +25,6 @@ public partial class Form1 : Form
                     btn.Left = x0 + j * d;
                     btn.Width = w;
                     btn.Height = w;
-                    //btn.Dock = DockStyle.Fill;
                     btn.Font = new Font("默认",10f,FontStyle.Bold);
                     btn.Visible = true;
                     btn.Tag = i * 4 + j;
@@ -231,11 +229,6 @@ public partial class Form1 : Form
                     btnsc[i, j] = btns[i, j].Text;
                 }
             }
-        }
-
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            
         }
 
         private void Form1_KeyPress(object sender, KeyPressEventArgs e)
